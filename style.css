@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-gap: 5px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  background-color: gray;
+  text-align: center;
+}
+
+.cell span {
+  line-height: 50px;
+}

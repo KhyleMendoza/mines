@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mine Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mine Game</h1>
+  <p>Current balance: $<span id="balance">0.00</span></p>
+  <p id="winnings-container" style="display: none;">Current winnings: $<span id="winnings">0.00</span></p>
+  <input type="number" id="bet" min="1" step="1.00" value="1.00">
+  <button id="play">Play</button>
+  <button id="cashout">Cashout</button>
+
+  <p>Number of bombs:
+    <select id="num-bombs"> <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option></select>
+  </p>
+  <div id="cells-left-container" style="display: none;">
+    <p>Bombs left: <span id="bombs-left"></span></p>
+    <p>Money left: <span id="money-left"></span></p>
+  </div>
+  <div class="grid">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+  </div>
+  <script src="mine.js"></script>
+</body>
+</html>
